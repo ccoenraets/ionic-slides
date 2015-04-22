@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Source Sans";
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Source Sans Light";
+    src: url("../fonts/SourceSansPro-Light.otf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Source Sans";
+    src: url("../fonts/SourceSansPro-Semibold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source Code";
+    src: url("../fonts/SourceCodePro-Regular.otf");
+}
+
+html, body {
+    height: 100%;
+}
+
+section {
+    font-family: "Source Sans Light", helvetica, arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+section h1 {
+    font-family: "Source Sans Light";
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-family: "Source Sans Light";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+section h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+section h1,
+section h2,
+section h3 {
+    color: #ffffff;
+}
+
+p {
+    margin: 1rem;
+}
+
+section {
+    clear: both;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: hidden;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+section.white {
+    background: #ffffff;
+}
+
+section.white,
+section.white h1,
+section.white h2,
+section.white h3
+{
+    color: #000000;
+}
+
+section ul {
+    list-style: disc;
+}
+
+section ol {
+    list-style: decimal !important;
+}
+
+section ul,
+section ol {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+section li {
+    padding: .1rem 0;
+}
+
+section .small-text {
+    font-size: .8rem;
+}
+
+#audience-pic {
+    width: 240px;
+    height: 180px;
+    border: solid 1rem #efefef;
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.speaker-info {
+    text-align: left;
+}
+
+.speaker-info i {
+    width: 2.5rem;
+    text-align: center;
+}
+
+.prettyprint {
+    font-size: .8rem !important;
+    background:#fff;
+    border:solid 6px #eeeeee;
+    padding:1rem;
+    line-height: 1.2rem;
+}
+
+section img {
+    max-width: 100%;
+    max-height: 75%;
+}
+
+section textarea {
+    width: 100%;
+    height: 100px;
+    border: solid 1px #ddd ;
+    border-radius: 0;
+    margin: 0px;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-family: 'Menlo', 'Courier New', 'Courier';
+    -webkit-overflow-scrolling:touch !important;
+    line-height: 1.1rem;
+
+}
+
+@media all and (min-width: 800px) {
+
+    section {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .prettyprint {
+        font-size: 2rem !important;
+        line-height: 2.4rem;
+        padding: 2rem;
+    }
+
+    .small-text {
+        font-size: 1rem;
+    }
+
+    #audience-pic {
+        width: 720px;
+        height: 540px;
+        border: solid 16px #efefef;
+    }
+
+    section h1 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    section h3 {
+        font-size: 2.5rem;
+    }
+
+    .speaker-info i {
+        width: 4rem;
+        text-align: center;
+    }
+
+    section p {
+        margin: 2rem;
+    }
+
+    section {
+        padding: 1.5rem 5rem;
+    }
+
+    section li {
+        padding: 1rem 0;
+    }
+
+    section textarea {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    section ol,
+    section ul {
+        padding-left: 3rem !important;
+    }
+
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section table {
+    border-collapse: collapse;
+}
+
+section td {
+    border: solid 1px #aaa;
+    width: 20rem;
+    padding: 1rem;
+}
+
+#wrapper {
+    background: #3777E1;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+}
+
+#swipeview-slider > div {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -o-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -mox-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    overflow: hidden;
+}
+
+#wrapper > div > .swipeview-loading {
+    background: url("../img/spinner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: spinner 1s infinite linear;
+    height: 36px;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#wrapper > div > .swipeview-loading section {
+    opacity: 0;
+}
+
+#menu {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 100%;
+    width: 250px;
+    font-size: 1rem;
+    border-left: solid 1px #888;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-box; /* iOS */
+    -webkit-box-orient: vertical; /* iOS */
+}
+
+#menu .title {
+    padding: 8px;
+    color: #ffffff;
+    font-size: 24px;
+    background: url("../img/keypoint.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin: 6px;
+}
+
+.build {
+    opacity: 0;
+}
+.built {
+    opacity: 1;
+}
+
+i.icon {
+    display: inline-block;
+    width: 48px;
+}
+
+.horizontal {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.horizontal > * {
+    margin: 0 8px;
+}
+
+.box {
+    width: 300px;
+    border: solid 2px #FFFFFF;
+    padding: 12px 36px;
+    margin: 12px 0;
+}
+.item.item-dark {
+    border-color: #333333;
+}
+
+.bar-dark {
+    border: none;
+}
+
+pre {
+    text-align: left;
+}
