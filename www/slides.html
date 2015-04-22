@@ -1,0 +1,336 @@
+<section style="background:#161A24">
+    <div style="position:absolute;top:0;left:0;right:0;max-width:100%;width:100%;">
+        <img src="img/ionitron.png" style="width:100%;border-bottom: solid 1px #444444"/>
+        <div style="text-align:left;padding: 40px 50px;">
+            <h1 style="font-size: 3.4rem">Building Native-Like Hybrid Apps with Ionic</h1>
+            <h1 style="font-size: 2.8rem">Christophe Coenraets<br/>@ccoenraets #FluentConf</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <img src="img/christophe_coenraets2.jpg" style="width:120px;height:120px;border-radius:50%"/>
+    <div class="speaker-info">
+        <p><i class="icon ion-person"></i>Christophe Coenraets</p>
+        <p><i class="icon ion-location"></i>Boston, MA</p>
+        <p><i class="icon ion-social-twitter"></i>@ccoenraets</p>
+        <p><i class="icon ion-social-rss"></i>http://coenraets.org</p>
+        <p><i class="icon ion-social-github"></i>https://github.com/ccoenraets</p>
+    </div>
+</section>
+
+<section>
+    <h1 style="margin-bottom:0;padding-bottom:12px">You</h1>
+    <img id="audience-pic" ng-src="{{image}}"/>
+    <div>
+        <button class="button icon ion-camera picture-btn" style="width: 80px;" ng-click="takePicture()"></button>
+        <button class="button icon ion-social-twitter picture-btn" style="width: 80px;" ng-click="shareTwitter()"></button>
+    </div>
+</section>
+
+<section class="white" style="background: #F6C0D8">
+    <h1>Native SDKs are Great</h1>
+    <div class="horizontal">
+        <ul>
+            <li>UI Components</li>
+            <li>UI Patterns</li>
+            <li>Architecture Patterns</li>
+        </ul>
+        <ul>
+            <li>High Performance</li>
+            <li>Mobile Services</li>
+            <li>Tools</li>
+        </ul>
+    </div>
+</section>
+
+<section style="background: black">
+    <h1>It's Not All Rosy</h1>
+    <ul>
+        <li>Multiple code bases</li>
+        <li>Multiple teams</li>
+        <li>You still don't have a mobile web app</li>
+    </ul>
+</section>
+
+<section class="white" style="background: #F6C0D8">
+    <img src="img/cordova.png" style="height: 150px;"/>
+    <h1>Hybrid Apps are Great</h1>
+    <div class="horizontal">
+        <ul>
+            <li>Single code base</li>
+            <li>Familiar (HTML, JS, CSS)</li>
+            <li>Native APIs (plugins)</li>
+        </ul>
+        <ul>
+            <li>Run & debug in browser</li>
+            <li>Web standards momentum</li>
+            <li>Mobile web app for free</li>
+        </ul>
+    </div>
+</section>
+
+<section style="background: black">
+    <img src="img/cordova.png" style="height: 150px;"/>
+    <h1>It's Not All Rosy</h1>
+    <div class="horizontal">
+        <ul>
+            <li>No UI Components</li>
+            <li>No UI Patterns</li>
+            <li>No Architecture Patterns</li>
+        </ul>
+        <ul>
+            <li>No Built-In Performance</li>
+            <li>Easy to write ugly apps</li>
+            <li>Easy to write slow apps</li>
+        </ul>
+    </div>
+</section>
+
+<section style="background: black">
+    <h1>Plenty of bad examples</h1>
+</section>
+
+<section>
+    <h1 style="text-align: center">There is no Hybrid SDK to enforce UI and architecture patterns</h1>
+</section>
+
+<section>
+    <img src="img/ionic-logo.png" style="height: 40%"/>
+    <h1 style="margin-top: 30px">The Hybrid SDK</h1>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" style="height: 150px"/>
+    <h1>Hybrid SDK</h1>
+    <div class="horizontal">
+        <ul>
+            <li>UI Components</li>
+            <li>UI Patterns</li>
+            <li>Architecture Patterns</li>
+        </ul>
+        <ul>
+            <li>Built-In Performance</li>
+            <li>Mobile Services</li>
+            <li>Tools</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <h1 style="padding-bottom:0;margin-bottom: 0;">Hybrid SDK</h1>
+    <div class="horizontal" style="align-items: flex-end; -webkit-align-items: flex-end;">
+        <div style="text-align: center">
+            <p style="text-transform: uppercase">Framework</p>
+            <div class="box">Your App</div>
+            <div class="box">Ionic</div>
+            <div class="box">AngularJS</div>
+            <div class="box">Cordova</div>
+            <div class="box">Native SDK</div>
+        </div>
+        <div style="text-align:center;flex-grow: 1;-webkit-flex-grow: 1;">
+            <p style="text-transform: uppercase">Tools</p>
+            <div class="box">Creator</div>
+            <div class="box">Lab</div>
+            <div class="box">CLI</div>
+        </div>
+        <div style="text-align:center;flex-grow: 1;-webkit-flex-grow: 1;">
+            <p style="text-transform: uppercase">Services</p>
+            <div class="box">Analytics</div>
+            <div class="box">Push</div>
+            <div class="box">View</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <img src="img/design-icon.png" width="180" height="180" style="margin: 0px">
+    <h1>UI Components</h1>
+    <div class="horizontal">
+        <ul>
+            <li>Lists</li>
+            <li>Cards</li>
+            <li>Nav Bars</li>
+        </ul>
+        <ul>
+            <li>Action Sheets</li>
+            <li>Popover</li>
+            <li>Carousel</li>
+        </ul>
+        <ul>
+            <li>Form Inputs</li>
+            <li>Sidemenu</li>
+            <li>Tabs</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <img src="img/design-icon.png" width="180" height="180" style="margin: 0px">
+    <h1>UI Patterns</h1>
+    <div class="horizontal">
+        <ul>
+            <li>Pull to Refresh</li>
+            <li>Infinite Scrolling</li>
+            <li>Swipe to Reveal</li>
+        </ul>
+        <ul>
+            <li>Action Sheets</li>
+            <li>Sidemenu</li>
+            <li>Carousel</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h1>Architecture Patterns</h1>
+    <div class="horizontal">
+        <div style="text-align: center;margin-right: 50px;">
+            <img src="img/angular-icon.png" width="210" height="210" style="margin-bottom: 0px">
+            <h1>AngularJS</h1>
+        </div>
+        <ul>
+            <li>MVC</li>
+            <li>Dependency Injection</li>
+            <li>Directives</li>
+            <li>Data binding</li>
+            <li>Templates</li>
+        </ul>
+    </div>
+</section>
+
+<section class="white">
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <h1>Native Integration</h1>
+    <div class="horizontal">
+        <div style="text-align: center;margin-right: 70px;">
+            <img src="img/ngcordova.png" width="210" height="210" style="margin-bottom: 0px">
+            <h2>ngCordova</h2>
+        </div>
+        <ul>
+            <li>Camera</li>
+            <li>Social Sharing</li>
+            <li>Touch Id</li>
+            <li>OAuth</li>
+            <li>Geolocation</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <img src="img/performance-icon.png" width="180" height="180" style="margin-bottom: 0px">
+    <h1>Performance</h1>
+    <ul>
+        <li>Hardware accelerated animations</li>
+        <li>Minimal DOM Manipulation</li>
+        <li>No jQuery (you could still include it if you want)</li>
+    </ul>
+</section>
+
+<section style="background: black">
+    <h1>Demos</h1>
+    <div class="horizontal">
+        <img src="img/kitchen-sink.png"/>
+        <img src="img/beer-explorer-ionic1.png"/>
+    </div>
+</section>
+
+<section style="background: #003250 url('img/ionic-game1.png');background-size: contain !important;background-position: center">
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <h1>Tools</h1>
+    <ul>
+        <li>CLI</li>
+        <li>Lab</li>
+        <li>Creator</li>
+    </ul>
+</section>
+
+<section style="background: #000000">
+    <h1>Let's Build an App</h1>
+    <pre class="code">
+npm install -g cordova ionic
+ionic start myapp sidemenu
+cd myapp
+ionic serve
+ionic server --lab
+    </pre>
+</section>
+
+<section style="background: #000000">
+    <h1>Build Locally</h1>
+    <pre class="code">
+ionic platform add ios
+ionic build ios
+
+ionic platform add android
+ionic build android
+    </pre>
+</section>
+
+<section style="background: #000000">
+    <h1>or Use the View App</h1>
+    <div class="horizontal">
+<pre>
+ionic upload
+</pre>
+        <img src="img/ionic-view.png" height="380" style="margin-bottom: 0;margin-left: 30px;">
+    </div>
+</section>
+
+<section>
+    <h1>Creator</h1>
+    <img src="img/creator-preview.png"/>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <h1>Services</h1>
+    <ul>
+        <li>View</li>
+        <li>Push</li>
+        <li>Analytics</li>
+    </ul>
+</section>
+
+<section>
+    <h1>Ionic Push</h1>
+<pre>
+ionic start myapp push
+cd my app
+ionic upload
+ionic platform add ios
+// Get App Id and API key
+// Configure push for platform
+// Upload push cert to Ionic.io
+ionic push --ios-dev-cert
+ionic push --send
+// provide secret key + token
+</pre>
+</section>
+
+<section>
+    <img src="img/ionic-logo-white.png" class="logo"/>
+    <h1>What's Next?</h1>
+    <ul>
+        <li>Angular 2</li>
+        <li>Ionic 2</li>
+    </ul>
+</section>
+
+<section>
+    <h1>Thank You!</h1>
+    <div class="speaker-info">
+        <p><i class="icon ion-person"></i>Christophe Coenraets</p>
+        <p><i class="icon ion-location"></i>Boston, MA</p>
+        <p><i class="icon ion-social-twitter"></i>@ccoenraets</p>
+        <p><i class="icon ion-social-rss"></i>http://coenraets.org</p>
+        <p><i class="icon ion-social-github"></i>https://github.com/ccoenraets</p>
+    </div>
+</section>

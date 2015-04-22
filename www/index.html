@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Fluent</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/keypoint.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/slides.css" rel="stylesheet">
+</head>
+
+<body ng-app="starter">
+
+<ion-nav-view>
+
+    <ion-side-menus enable-menu-with-back-views="false">
+
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-clear">
+                <ion-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view name="menuContent">
+                <ion-view ng-controller="SlidesCtrl">
+                    <div id="wrapper"></div>
+                </ion-view>
+            </ion-nav-view>
+        </ion-side-menu-content>
+
+        <ion-side-menu side="left" ng-controller="MenuCtrl">
+            <ion-header-bar class="bar-dark">
+                <h1 class="title">Slides</h1>
+            </ion-header-bar>
+            <ion-content>
+                <ion-list>
+                    <ion-item ng-repeat="title in titles" class="dark-border item-dark item-icon-left" nav-clear menu-close href="#/{{$index}}">
+                        <i class="icon ion-easel"></i>
+                        {{title}}
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+
+    </ion-side-menus>
+
+</ion-nav-view>
+
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+<script src="cordova.js"></script>
+<script src="lib/swipeview.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+
+</body>
+
+</html>
